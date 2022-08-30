@@ -13,6 +13,12 @@ a {
     border-radius: 3px;
 }
 
+.container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    /* border: 2px solid black; */
+}
+
 .azure-icon {
     color: #8EDAFC;
 }
@@ -30,7 +36,7 @@ a {
 }
 
 .row:first-child {
-    background-color: #EAEAEA;
+    background-color: white;
 }
 
 #root {
@@ -39,11 +45,6 @@ a {
     height: 100vh;
 }
 
-.container {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    /* border: 2px solid black; */
-}
 
 .userAvatar img {
     margin: 12px 8px;
@@ -128,6 +129,7 @@ a {
 .lastDate {
     font-size: 10px;
 }
+
 .dropdown-menu{
     padding:0
 }
@@ -135,10 +137,8 @@ a {
 .message-text {
     word-wrap: break-word;
     position: relative;
-    margin: 20px 20px;
+    margin: 10px 10px;
     padding: 10px 10px 0px 10px;
-    min-width: 20%;
-    max-width: 50%;
     border-radius: 10px;
     font-size: 1rem;
     filter: drop-shadow(3px 3px 3px rgb(133, 133, 133)); 

@@ -138,7 +138,7 @@ const app = new Vue({
                   },
                   {
                       date: '28/08/2022 15:50:00',
-                      message: 'No, ho già mangiata ieri, ordiniamo sushi!',
+                      message: 'No, già mangiata ieri, ordiniamo sushi!',
                       status: 'sent'
                   },
                   {

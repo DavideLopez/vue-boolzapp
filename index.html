@@ -23,13 +23,13 @@
 <body>
 
     <div id="root">
-        <!-- Container principale -->
+        <!-- CONTAINER -->
         <div class="container h-100">
-          <!-- Row principale -->
+          <!-- ROW -->
           <div class="row align-items-lg-stretch h-100 g-0 justify-content-center">
-            <!-- Colonna di sinistra -->
+            <!-- COLONNA SINISTRA -->
             <div class="col-12 col-md-4 d-md-block h-100" :class="contacts[currentIndex].visible ? 'd-none' : 'd-block'">
-              <!-- Riquadro utente -->
+              <!-- RIQUADRO UTENTE -->
               <div class="header">
                 <div class="userAvatar rounded-circle d-flex justify-content-between align-items-center">
                   <div class="">
@@ -45,18 +45,19 @@
     
                 </div>
               </div>
-              <!-- Riquadro notifiche -->
+              <!-- RIQUADRO NOTIFICHE -->
               <div class="notifications">
                 <div class="bg-azure d-flex align-items-center">
                   <div class="rounded-circle icon bg-white text-center azure-icon m-2">
                     <i class=" fa-solid fa-bell-slash"></i>
+                    
                   </div>
                   <p class="lastMessage m-0">Ricevi notifiche di nuovi messaggi <br>
-                    <span class="text-decoration-underline text-secondary"><a href="#">Attiva notifiche desktop</a> </span>
+                    <span class="text-decoration-underline text-secondary"><a href="#">Attiva notifiche Desktop</a> </span>
                   </p>
                 </div>
               </div>
-              <!-- Search bar -->
+              <!-- SEARCH BAR -->
               <div class="search-bar">
                 <div class="input-group px-2 py-2">
                   <span class="input-group-text bg-white" id="basic-addon1 ">
@@ -66,7 +67,7 @@
                     placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
               </div>
-              <!-- Riquadro contacts -->
+              <!-- RIQUADRO CONTATTI -->
               <div class="contacts">
                 <div @click="showChatMobile(); changeActive(contact.id)" v-for="(contact, index) in filteredContacts"
                   :key="contact.id" class="d-flex align-items-center justify-content-between p-2 contact rounded rounded-2"
@@ -87,7 +88,8 @@
                 </div>
               </div>
             </div>
-            <!--/coloums -->
+            
+            <!-- COLONNE -->
             
             <div class="col-12 col-md-8 d-md-block h-100" :class="contacts[currentIndex].visible ? 'd-block' : 'd-none'">
               <div class="header userAvatar d-flex align-items-center ">
@@ -135,7 +137,7 @@
               <div class="footer d-flex align-items-center">
                 <div class="input-group px-0 align-items-center">
                   <a class="emoticons" href="#"><i class="fa-regular fa-face-smile emoticons"></i></a>
-                  <input type="text" class="form-control rounded-3" placeholder="Cerca o inizia una nuova chat"
+                  <input type="text" class="form-control rounded-3" placeholder="Messaggio...."
                     aria-label="Username" aria-describedby="basic-addon1" v-model="message" @keyup.enter="sendMessage()">
                   <a class="vocal" href="#"><i class="fa-solid fa-microphone vocal"></i></a>
                 </div>

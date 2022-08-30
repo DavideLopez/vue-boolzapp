@@ -10,10 +10,15 @@ a {
 
 .bg-azure {
     background-color: #8EDAFC;
+    border-radius: 3px;
 }
 
 .azure-icon {
     color: #8EDAFC;
+}
+
+.azure-icon:hover {
+    color: currentColor;
 }
 
 .icons:hover {
@@ -71,10 +76,7 @@ a {
     height: 55px;
 }
 
-.azure-icon:hover {
-    color: black;
-    
-}
+
 
 .header {
     background-color: #EAEAEA;

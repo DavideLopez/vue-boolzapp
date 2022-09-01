@@ -173,12 +173,12 @@ const app = new Vue({
       sendMessage() {
           if (this.message == '') return;
           const newMessage = {
-              date: 'Oggi ' + dayjs().format('HH:mm'),
+              date: 'Oggi ' + dayjs().format('DD/MM/YYYY HH:mm:ss'),
               message: this.message,
               status: 'sent'
           };
           const replyMessage = {
-              date: 'Oggi ' + dayjs().format('HH:mm'),
+              date: 'Oggi ' + dayjs().format('DD/MM/YYYY HH:mm:ss'),
               message: this.randomReplies[Math.floor(Math.random() * this.randomReplies.length)],
               status: 'received'
           }
@@ -188,7 +188,8 @@ const app = new Vue({
               this.contacts[this.currentIndex].messages.push(replyMessage);
           }, 1000);
       },
-       eraseMessage(index, currentIndex) {  // ci ho provato 
+       eraseMessage(index, currentIndex) {   
+           console.log('ciao')
           if (this.contacts[currentIndex].messages.length > 0) {
               this.contacts[currentIndex].messages.splice(index, 1);
           } else return;
